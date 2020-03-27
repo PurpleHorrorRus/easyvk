@@ -274,7 +274,7 @@ class HTTPEasyVKClient {
         body: method === 'get' ? undefined : qs.stringify(form),
         qs: method === 'get' ? form : undefined
       }).then(async (res) => {
-        res = await res.text()
+        res = await res.textConverted()
 
         self._vk._debugger.push('response', res)
 

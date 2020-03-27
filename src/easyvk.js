@@ -867,7 +867,7 @@ module.exports.class = {
   EasyVKError: 'EasyVKError'
 }
 
-module.exports.version = '2.6.0'
+module.exports.version = '2.6.1'
 module.exports.callbackAPI = new EasyVKCallbackAPI({})
 module.exports.streamingAPI = new EasyVKStreamingAPI({})
 module.exports.authTypes = authTypes
