@@ -152,7 +152,7 @@ class LongPollConnection extends EventEmitter {
           return reconnect()
         }
       }).catch(err => {
-        if (err.toString().match('TIMEDOUT') || err.toString().match('ENOENT')) {
+        if (err.toString().match('TIMEDOUT') || err.toString().match('ENOENT') || err.toString().match('timeout')) {
           return reconnect()
         }
         return self.emit('error', err)
